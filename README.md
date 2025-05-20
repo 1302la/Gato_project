@@ -66,6 +66,12 @@ Você pode facilmente adaptar esse jogo para:
 
 ---
 
+## 🧑‍💻 Contribuindo
+
+Sinta-se à vontade para clonar, modificar ou expandir este projeto para fins didáticos ou lúdicos.
+
+---
+
 ## 📄 Licença
 
 Este projeto é livre para uso educacional e não possui licença formal. Créditos para os autores originais dos GIFs usados.
@@ -73,3 +79,4 @@ Este projeto é livre para uso educacional e não possui licença formal. Crédi
 ---
 
 Feito com 💙 para aprender lógica e se divertir!
+---
