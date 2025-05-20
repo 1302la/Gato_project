@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>Quem Trouxe o Gato</title>
+</head>
+
+<img id="gif-gato" 
+     src="img/cat-dance.gif" 
+     alt="Gato dançando" 
+     style="display: none; 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 250px; 
+            z-index: 1000;" />
+
+<img id="gif-confete" 
+     src="img/congratulations-7600-ezgif.com-loop-count.gif" 
+     alt="Confete" 
+     style="display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: 999; 
+            pointer-events: none;" />
+
+<body>
+    <h1 style="text-align: center;">Quem Trouxe o Gato?</h1>
+    
+    <div class="container">
+        
+        <div class="casa">
+            <h2>Aluno #1</h2>
+            <select id="nome1">
+                <option value="">Selecione o nome</option>
+                <option value="davi">Davi</option>
+                <option value="isa">Isa</option>
+                <option value="bella">Bella</option>
+            </select>
+            
+            <select id="suco1">
+                <option value="">Selecione o suco</option>
+                <option value="laranja">Laranja</option>
+                <option value="uva">Uva</option>
+                <option value="morango">Morango</option>
+            </select>
+            
+            <select id="animal1">
+                <option value="">Selecione o animal</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="papagaio">Papagaio</option>
+            </select>
+        </div>
+        
+        <div class="casa">
+            <h2>Aluno #2</h2>
+            <select id="nome2">
+                <option value="">Selecione o nome</option>
+                <option value="davi">Davi</option>
+                <option value="isa">Isa</option>
+                <option value="bella">Bella</option>
+            </select>
+            
+            <select id="suco2">
+                <option value="">Selecione o suco</option>
+                <option value="laranja">Laranja</option>
+                <option value="uva">Uva</option>
+                <option value="morango">Morango</option>
+            </select>
+            
+            <select id="animal2">
+                <option value="">Selecione o animal</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="papagaio">Papagaio</option>
+            </select>
+        </div>
+        
+        <div class="casa">
+            <h2>Aluno #3</h2>
+            <select id="nome3">
+                <option value="">Selecione o nome</option>
+                <option value="davi">Davi</option>
+                <option value="isa">Isa</option>
+                <option value="bella">Bella</option>
+            </select>
+            
+            <select id="suco3">
+                <option value="">Selecione o suco</option>
+                <option value="laranja">Laranja</option>
+                <option value="uva">Uva</option>
+                <option value="morango">Morango</option>
+            </select>
+            
+            <select id="animal3">
+                <option value="">Selecione o animal</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="papagaio">Papagaio</option>
+            </select>
+        </div>
+    </div>
+    
+    <div>
+        <div id="regra1" class="rule">Isa não gosta de morango.</div>
+        <div id="regra2" class="rule">Bella está a direita de quem toma suco de uva.</div>
+        <div id="regra3" class="rule">Davi tem um cachorro.</div>
+        <div id="regra4" class="rule">Bella toma suco de laranja.</div>
+        <div id="regra5" class="rule">Isa tem alergia a pelos.</div>
+        <div id="regra6" class="rule">Davi é o primeiro da fila.</div>
+    </div>
+    
+    <div class="buttons">
+        <button onclick="verificarRegras()">Verificar Regras</button>
+        <button onclick="resetar()">Resetar</button>
+    </div>
+    
+    <div id="editor-regras" style="display: none; margin-top: 20px; padding: 20px; border: 1px solid #ccc; background-color: #f9f9f9;">
+        <h3>Editor de Regras</h3>
+        <p>Edite as regras existentes ou crie novas regras:</p>
+        
+    </div>
