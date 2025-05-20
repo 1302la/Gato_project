@@ -46,6 +46,7 @@ As regras são exibidas em tela. Elas devem ser interpretadas logicamente para c
 ---
 
 ## 📁 Estrutura do projeto
+```plaintext
 └── img/
    ├── cat-dance.gif # GIF de comemoração do gato
    └── congratulations-7600.gif # GIF de confete
@@ -55,6 +56,8 @@ As regras são exibidas em tela. Elas devem ser interpretadas logicamente para c
 ├── index.html # Interface principal do jogo
 ├── style.css # Estilo visual
 ├── app.js # Lógica do jogo
+```
+
 
 ## 💡 Personalização
 
