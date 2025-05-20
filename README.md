@@ -50,8 +50,8 @@ As regras são exibidas em tela. Elas devem ser interpretadas logicamente para c
 ├── style.css # Estilo visual
 ├── app.js # Lógica do jogo
 └── img/
-├── cat-dance.gif # GIF de comemoração do gato
-└── congratulations-7600.gif # GIF de confete
+   ├── cat-dance.gif # GIF de comemoração do gato
+   └── congratulations-7600.gif # GIF de confete
 
 ## 💡 Personalização
 
