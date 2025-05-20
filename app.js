@@ -50,22 +50,25 @@ function verificarRegras() {
     }
 
     if (correta) {
-        // Mostrar GIFs apenas uma vez por acerto
+    // Mostrar GIFs apenas uma vez por acerto
         if (!window.jaMostrouCelebracao) {
             document.getElementById("gif-gato").style.display = "block";
             document.getElementById("gif-confete").style.display = "block";
 
             const somConfetti = document.getElementById("som-confetti");
             const somFesta = document.getElementById("som-festa");
-            somConfetti.currentTime = 0;
-            somFesta.currentTime = 0;
-            somConfetti.play();
-            somFesta.play();
+
+            if (somConfetti && somFesta) {
+                somConfetti.currentTime = 0;
+                somFesta.currentTime = 0;
+                somConfetti.play().catch(console.error);
+                somFesta.play().catch(console.error);
+            }
 
             setTimeout(() => {
                 document.getElementById("gif-gato").style.display = "none";
                 document.getElementById("gif-confete").style.display = "none";
-                window.jaMostrouCelebracao = false; // libera nova animação no futuro
+                window.jaMostrouCelebracao = false;
             }, 10000);
 
             window.jaMostrouCelebracao = true;
@@ -74,7 +77,7 @@ function verificarRegras() {
         alert("Solução está incorreta :(");
         document.getElementById("gif-gato").style.display = "none";
         document.getElementById("gif-confete").style.display = "none";
-        window.jaMostrouCelebracao = false; // garante que animação possa rodar de novo depois de um erro
+        window.jaMostrouCelebracao = false;
     }
 }
 
