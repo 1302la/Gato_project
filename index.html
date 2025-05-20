@@ -4,39 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-
     <title>Quem Trouxe o Gato</title>
 </head>
 
-<img id="gif-gato" 
-     src="img/cat-dance.gif" 
-     alt="Gato dançando" 
-     style="display: none; 
-            position: fixed; 
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            width: 250px; 
-            z-index: 1000;" />
-
-<img id="gif-confete" 
-     src="img/congratulations-7600-ezgif.com-loop-count.gif" 
-     alt="Confete" 
-     style="display: none; 
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            width: 100vw; 
-            height: 100vh; 
-            object-fit: cover; 
-            z-index: 999; 
-            pointer-events: none;" />
-
 <body>
-
-    <audio id="som-confetti" src="audio/som-confetti.mp3" preload="auto"></audio>
-    <audio id="som-festa" src="audio/som-festa.mp3" preload="auto"></audio>
 
     <h1 style="text-align: center;">Quem Trouxe o Gato?</h1>
     
@@ -134,3 +105,40 @@
         <p>Edite as regras existentes ou crie novas regras:</p>
         
     </div>
+
+    <!-- GIFs de comemoração -->
+
+    <img id="gif-gato" 
+     src="img/cat-dance.gif" 
+     alt="Gato dançando" 
+     style="display: none; 
+            position: fixed; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 250px; 
+            z-index: 1000;" />
+
+    <img id="gif-confete" 
+     src="img/congratulations-7600-ezgif.com-loop-count.gif" 
+     alt="Confete" 
+     style="display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            z-index: 999; 
+            pointer-events: none;" />
+
+     <!-- Áudios -->
+    <audio id="som-confetti" src="audio/som-confetti.mp3" preload="auto"></audio>
+    <audio id="som-festa" src="audio/som-festa.mp3" preload="auto"></audio>
+
+    <!-- Script -->
+
+    <script src="app.js"></script>
+
+</body>
+</html>
