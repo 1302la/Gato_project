@@ -7,6 +7,8 @@ function resetar() {
     }
     document.getElementById("gif-gato").style.display = "none";
     document.getElementById("gif-confete").style.display = "none";
+    document.getElementById("som-confetti").currentTime = 0;
+    document.getElementById("som-festa").currentTime = 0;
     window.jaMostrouCelebracao = false;
     atualizarDisponibilidade(); // reativa todas as opções
 }
@@ -52,6 +54,13 @@ function verificarRegras() {
         if (!window.jaMostrouCelebracao) {
             document.getElementById("gif-gato").style.display = "block";
             document.getElementById("gif-confete").style.display = "block";
+
+            const somConfetti = document.getElementById("som-confetti");
+            const somFesta = document.getElementById("som-festa");
+            somConfetti.currentTime = 0;
+            somFesta.currentTime = 0;
+            somConfetti.play();
+            somFesta.play();
 
             setTimeout(() => {
                 document.getElementById("gif-gato").style.display = "none";
