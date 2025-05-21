@@ -10,7 +10,6 @@ O jogador deve preencher corretamente os dados (nome, suco e animal) de três al
 
 - Um gif de gato dançando aparece no centro da tela 🐈‍⬛🎉
 - Um gif de confete cobre a tela 🎊
-- As regras são validadas com feedback visual ✅❌
 
 ---
 
@@ -38,10 +37,7 @@ As regras são exibidas em tela. Elas devem ser interpretadas logicamente para c
 1. Abra o arquivo `index.html` no navegador.
 2. Selecione os valores nos menus suspensos para os 3 alunos.
 3. Clique em **“Verificar Regras”**.
-4. O jogo dirá se a solução está correta ou incorreta:
-   - Regras corretas são riscadas com ✅.
-   - Regras erradas aparecem em vermelho com ❌.
-5. Clique em **“Resetar”** para começar de novo.
+4. Clique em **“Resetar”** para começar de novo.
 
 ---
 
