@@ -74,7 +74,7 @@ function verificarRegras() {
             window.jaMostrouCelebracao = true;
         }
     } else {
-        alert("Solução está incorreta :(");
+        alert("Ops, a solução está incorreta :(. Tente mais uma vez com atenção");
         document.getElementById("gif-gato").style.display = "none";
         document.getElementById("gif-confete").style.display = "none";
         window.jaMostrouCelebracao = false;
